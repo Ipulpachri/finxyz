@@ -3,7 +3,7 @@ return`
  ${fake} 
 
      ${ucapanWaktu} kak 
- ▸ Prefix : 「 ${prefix} 」
+ ▸ Prefix : < ${prefix} >
  ▸ Type : ${multi ? 'Multi' : 'Onepref'}
  ▸ Status : ${publik ? "Self" : "Public"}
  ▸ Jam : ${time2}
@@ -260,6 +260,7 @@ return`
 
 
 𝗧𝗛𝗔𝗡𝗞𝗦 𝗧𝗢 : 
+ ▢  : Fachri
  ▢  : Dittaz
  ▢  : ZeilBotz
  ▢  : AlyaaXyz?
