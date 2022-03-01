@@ -3,27 +3,28 @@ exports.menu = (listcmdblock, kyun, process, timeWit, timeWita, timeWib, multi, 
 return`
 ${week}, ${calender} 
 
- *╭▸* Nama : ${pushname}
- *│*⦁ Status : ${isPremium ? 'Premium':'Free'}
- *│*⦁ Limit : ${isPremium ? 'Unlimited' : `${getLimit(sender, limitCount, limit)}/${limitCount}`}
- *│*⦁ Balance : $${getBalance(sender, balance)}
- *│*⦁ Prefix :「  ${multi ? 'Multi Prefix' : `${prefix}`}  」
- *│*⦁ Mode : ${publik ? "Public" : "Self"}
- *│*⦁ Active : ${kyun(process.uptime())}
- *│*⦁ Time : ${timeWib} Wib
- *│*⦁ Time : ${timeWit} Wit
- *│*⦁ Time : ${timeWita} Wita
- *│*⦁ Hit Today : ${JSON.parse(fs.readFileSync('./database/hitToday.json')).length}
- *│*⦁ Total User : ${JSON.parse(fs.readFileSync('./database/user.json')).length}
- *│*⦁ Total Error : ${JSON.parse(fs.readFileSync('./database/listerror.json')).length}
- *│*⦁ User Banned : ${JSON.parse(fs.readFileSync('./database/banned.json')).length}
- *│*⦁ User Blocked : ${JSON.parse(fs.readFileSync('./database/userblocked.json')).length} 
- *╰▸* Cmd Blocked : ${JSON.parse(fs.readFileSync('./database/blockcmd.json')).length} 
+ *╭──❒* Nama User : ${pushname}
+ *│*▸ Status User: ${isPremium ? 'Premium':'Free'}
+ *│*▸ Limit User : ${isPremium ? 'Unlimited' : `${getLimit(sender, limitCount, limit)}/${limitCount}`}
+ *│*▸ Balance User : $${getBalance(sender, balance)}
+ *│*▸ Prefix :  ${multi ? 'Multi Prefix' : `${prefix}`}  
+ *│*▸ Mode : ${publik ? "Public" : "Self"}
+ *│*▸ Active : ${kyun(process.uptime())}
+ *│*▸ Time : ${timeWib} Wib
+ *│*▸ Time : ${timeWit} Wit
+ *│*▸ Time : ${timeWita} Wita
+ *│*▸ Hit Today : ${JSON.parse(fs.readFileSync('./database/hitToday.json')).length}
+ *│*▸ Total User : ${JSON.parse(fs.readFileSync('./database/user.json')).length}
+ *│*▸ Total Error : ${JSON.parse(fs.readFileSync('./database/listerror.json')).length}
+ *│*▸ User Banned : ${JSON.parse(fs.readFileSync('./database/banned.json')).length}
+ *│*▸ User Blocked : ${JSON.parse(fs.readFileSync('./database/userblocked.json')).length} 
+ *│*▸ Cmd Blocked : ${JSON.parse(fs.readFileSync('./database/blockcmd.json')).length}
+ *╰────────────❒*  
 
- *]───── COMMAND ─────[*
+ *]─────❒ COMMAND BOT ❒─────[*
 					          ▾
  ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
-*╭─❲ GROUP ❳*
+*╭─❒ ⌜ MENU GROUP ⌟*
 *│*
 *│▸* ${prefix}antilink
 *│▸* ${prefix}antilinkgc
@@ -42,7 +43,7 @@ ${week}, ${calender}
 *│▸* ${prefix}kickme
 *│▸* ${prefix}opentime   
 *│▸* ${prefix}closetime    
-*│▸* ${prefix}welcome    Fix
+*│▸* ${prefix}welcome    
 *│▸* ${prefix}linkgc
 *│▸* ${prefix}infogc
 *│▸* ${prefix}gc
@@ -67,9 +68,9 @@ ${week}, ${calender}
 *│▸* vote
 *│▸* devote
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ INFO ❳*          
+*╭─❒ ⌜ INFO BOT ⌟*          
 *│*
 *│* ▸ Antibuggc : ${Antibuggc ? 'ON' : 'OFF'}
 *│* ▸ Antibadword : ${Toxic ? 'ON' : 'OFF'}
@@ -84,9 +85,9 @@ ${week}, ${calender}
 *│* ▸ Autoread : ${autoread ? 'ON' : 'OFF'}
 *│* ▸ Forward : ${forwarding ? 'ON' : 'OFF'}
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ RANDOM ❳*
+*╭─❒ ⌜ MENU RANDOM ⌟*
 *│* 
 *│▸* ${prefix}loli   
 *│▸* ${prefix}cosplay 
@@ -104,19 +105,19 @@ ${week}, ${calender}
 *│▸* ${prefix}anime
 *│▸* ${prefix}memeindo
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ NSFW ❳*    New™
+*╭─❒ ⌜ MENU NSFW ⌟*    
 *│*
-*│▸* ${prefix}nsfwmenu 
+*│▸* ${prefix}nsfwmenu ( Dinonaktifkan ) 
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ GAME ❳*
+*╭─❒ ⌜ MENU GAME ⌟*
 *│*
 *│▸* ${prefix}tebakbendera    
 *│▸* ${prefix}tebakgambar     
-*│▸* ${prefix}tebakanime    Eror
+*│▸* ${prefix}tebakanime    
 *│▸* ${prefix}caklontong     
 *│▸* ${prefix}family100     
 *│▸* ${prefix}tebakkata     
@@ -124,9 +125,9 @@ ${week}, ${calender}
 *│▸* ${prefix}siapaaku     
 *│▸* ${prefix}math
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ USER LIMIT ❳*
+*╭─❒ ⌜ CEK USER LIMIT ⌟*
 *│*
 *│▸* ${prefix}limit 
 *│▸* ${prefix}claim
@@ -137,9 +138,9 @@ ${week}, ${calender}
 *│▸* ${prefix}buygamelimit
 *│▸* ${prefix}myprofil
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ MAKER ❳*
+*╭─❒ ⌜ MENU MAKER ⌟*
 *│*
 *│▸* ${prefix}sticker 
 *│▸* ${prefix}swm 
@@ -182,9 +183,9 @@ ${week}, ${calender}
 *│▸* ${prefix}dictator
 *│▸* ${prefix}ddungeon
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ CONVERTER ❳*
+*╭─❒ ⌜ MENU CONVERTER ⌟*
 *│*
 *│▸* ${prefix}toimg 
 *│▸* ${prefix}tomp3 
@@ -201,9 +202,9 @@ ${week}, ${calender}
 *│▸* ${prefix}ghost 
 *│▸* ${prefix}volume     
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ STORAGE ❳*
+*╭─❒ ⌜ MENU STORAGE ⌟*
 *│*
 *│▸* ${prefix}addmusik
 *│▸* ${prefix}adderror
@@ -220,9 +221,9 @@ ${week}, ${calender}
 *│▸* ${prefix}delstik
 *│▸* ${prefix}delerror
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ FUN ❳*
+*╭─❒ ⌜ MENU FUN ⌟*
 *│*
 *│▸* ${prefix}fitnah 
 *│▸* ${prefix}hobby
@@ -244,9 +245,9 @@ ${week}, ${calender}
 *│▸* ${prefix}dare
 *│▸* ${prefix}cekbapak
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ PREMIUM ❳*
+*╭─❒ ⌜ MENU PREMIUM ⌟*
 *│* 
 *│▸* ${prefix}pinterest
 *│▸* ${prefix}asupan 
@@ -260,12 +261,12 @@ ${week}, ${calender}
 *│▸* ${prefix}ytdl
 *│▸* ${prefix}fbhd
 *│▸* ${prefix}twitterhd
-*│▸* ${prefix}playaudio   >No limit size
-*│▸* ${prefix}playvideo    >No limit size
+*│▸* ${prefix}playaudio  
+*│▸* ${prefix}playvideo    
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ PRIMBON ❳* New™
+*╭─❒ ⌜ MENU PRIMBON ⌟* 
 *│* 
 *│▸* ${prefix}artinama     
 *│▸* ${prefix}artimimpi     
@@ -278,9 +279,9 @@ ${week}, ${calender}
 *│▸* ${prefix}haribaik     
 *│▸* ${prefix}harilarangan    
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ DOWNLOAD ❳*
+*╭─❒ ⌜ MENU DOWNLOAD ⌟*
 *│*
 *│▸* ${prefix}ytmp4 
 *│▸* ${prefix}ytmp3 
@@ -292,9 +293,9 @@ ${week}, ${calender}
 *│▸* ${prefix}twitter          
 *│▸* ${prefix}fb          
 *│*
-*╰────────────⦁* 
+*╰────────────❒* 
 
-*╭─❲ SEARCH ❳*
+*╭─❒ ⌜ MENU SEARCH ⌟*
 *│*
 *│▸* ${prefix}ytsearch 
 *│▸* ${prefix}google 
@@ -305,12 +306,12 @@ ${week}, ${calender}
 *│▸* ${prefix}brainly
 *│▸* ${prefix}wait     
 *│▸* ${prefix}chara    
-*│▸* ${prefix}lirik     New™
-*│▸* ${prefix}wallpaper     New™
+*│▸* ${prefix}lirik     
+*│▸* ${prefix}wallpaper     
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ OTHER ❳*
+*╭─❒ ⌜ MENU OTHER ⌟*
 *│*
 *│▸* ${prefix}ping
 *│▸* ${prefix}inspect 
@@ -326,15 +327,15 @@ ${week}, ${calender}
 *│▸* ${prefix}spam
 *│▸* ${prefix}kodebahasa 
 *│▸* ${prefix}listvn
-*│▸* ${prefix}cerpen     New™
+*│▸* ${prefix}cerpen     
 *│▸* ${prefix}musik
 *│▸* ${prefix}reportbug
 *│▸* ${prefix}translate
-*│▸* ${prefix}otakuongoing New™
+*│▸* ${prefix}otakuongoing 
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ OWNER ❳*
+*╭─❒ ⌜ MENU OWNER ⌟*
 *│*
 *│▸* ${prefix}off 
 *│▸* ${prefix}on
@@ -353,7 +354,7 @@ ${week}, ${calender}
 *│▸* ${prefix}setgopay     
 *│▸* ${prefix}setdana     
 *│▸* ${prefix}setimageinfo
-*│▸* ${prefix}setmenu      New™
+*│▸* ${prefix}setmenu      
 *│▸* ${prefix}sendhidetag     
 *│▸* ${prefix}adderror     
 *│▸* ${prefix}addorder      
@@ -391,9 +392,9 @@ ${week}, ${calender}
 *│▸* ${prefix}forwardtotal 
 *│▸* ${prefix}join    
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ MODE WAR ❳*
+*╭─❒ ⌜ MODE WAR ⌟*
 *│*
 *│▸* ${prefix}bugv1 
 *│▸* ${prefix}bugv2 
@@ -403,10 +404,11 @@ ${week}, ${calender}
 *│▸* ${prefix}bugvn    
 *│▸* ${prefix}amaterasu 
 *│*
-*╰────────────⦁*
+*╰────────────❒*
 
-*╭─❲ THANKS TO ❳*
+*╭─❒ ⌜ THANKS TO ⌟*
 *│*
+*│* • Fachri
 *│* • Dittaz
 *│* • ZeilBotz
 *│* • AlyaaXyz?
@@ -418,5 +420,5 @@ ${week}, ${calender}
 *│* • X - Dev Team
 *│* • XChillDs & Yuzu
 *│*
-*╰────────────⦁*`
+*╰────────────❒*`
 }
