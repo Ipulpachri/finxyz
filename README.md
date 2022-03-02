@@ -39,11 +39,6 @@
 </p>
 
 # Thanks To
-* [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`Hexagonz`](https://github.com/hexagonz)
-* [`Ipulpachri`](https://github.com/Ipulpachri)
-
----------
 
  [![Baileys](https://github.com/adiwajshing/baileys.png?size=100)](https://github.com/adiwajshing/Baileys) | [![Hexagonz](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) | [![Facri](https://github.com/Ipulpachri.png?size=100)](https://github.com/Ipulpachri)
 --------
