@@ -9,7 +9,7 @@
   <a href="https://github.com/Ipulpachri"><img title="Author" src="https://img.shields.io/badge/Author-Ipulpachri-red.svg?style=for-the-badge&logo=github" /></a>
 </p>
 <p align="center">
-<a href="#"><img title="mengapi" src="https://img.shields.io/static/v1?label=FREE&message=SELF_BOT&color=red"></a>
+<a href="#"><img title="Jangan Lupa Follow" src="https://img.shields.io/static/v1?label=FREE&message=SELF_BOT&color=red"></a>
 </p>
 
 # Requirements
