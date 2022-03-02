@@ -27,8 +27,7 @@ Bot on 24 jam tapi kadang
 juga mati klo lgi ada error 
 atau lgi perbaikan bug.
 
-Kalo mau sewa bisa chat
-owner Bot,
+Kalo mau SC botnya bisa chat owner !!,
 `
 }
 
