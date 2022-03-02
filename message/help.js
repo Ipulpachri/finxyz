@@ -3,22 +3,25 @@ exports.menu = (listcmdblock, kyun, process, timeWit, timeWita, timeWib, multi, 
 return`
 ${week}, ${calender} 
 
- *╭──❒* Nama User : ${pushname}
- *│*▸ Status User: ${isPremium ? 'Premium':'Free'}
- *│*▸ Limit User : ${isPremium ? 'Unlimited' : `${getLimit(sender, limitCount, limit)}/${limitCount}`}
- *│*▸ Balance User : $${getBalance(sender, balance)}
- *│*▸ Prefix :  ${multi ? 'Multi Prefix' : `${prefix}`}  
- *│*▸ Mode : ${publik ? "Public" : "Self"}
- *│*▸ Active : ${kyun(process.uptime())}
- *│*▸ Time : ${timeWib} Wib
- *│*▸ Time : ${timeWit} Wit
- *│*▸ Time : ${timeWita} Wita
- *│*▸ Hit Today : ${JSON.parse(fs.readFileSync('./database/hitToday.json')).length}
- *│*▸ Total User : ${JSON.parse(fs.readFileSync('./database/user.json')).length}
- *│*▸ Total Error : ${JSON.parse(fs.readFileSync('./database/listerror.json')).length}
- *│*▸ User Banned : ${JSON.parse(fs.readFileSync('./database/banned.json')).length}
- *│*▸ User Blocked : ${JSON.parse(fs.readFileSync('./database/userblocked.json')).length} 
- *│*▸ Cmd Blocked : ${JSON.parse(fs.readFileSync('./database/blockcmd.json')).length}
+ *╭──❒* 
+ *│*
+ *│*〲 Nama User : ${pushname}
+ *│*〲 Status User: ${isPremium ? 'Premium':'Free'}
+ *│*〲 Limit User : ${isPremium ? 'Unlimited' : `${getLimit(sender, limitCount, limit)}/${limitCount}`}
+ *│*〲 Balance User : $${getBalance(sender, balance)}
+ *│*〲 Prefix :  ${multi ? 'Multi Prefix' : `${prefix}`}  
+ *│*〲 Mode : ${publik ? "Public" : "Self"}
+ *│*〲 Active : ${kyun(process.uptime())}
+ *│*〲 Time : ${timeWib} Wib
+ *│*〲 Time : ${timeWit} Wit
+ *│*〲 Time : ${timeWita} Wita
+ *│*〲 Hit Today : ${JSON.parse(fs.readFileSync('./database/hitToday.json')).length}
+ *│*〲 Total User : ${JSON.parse(fs.readFileSync('./database/user.json')).length}
+ *│*〲 Total Error : ${JSON.parse(fs.readFileSync('./database/listerror.json')).length}
+ *│*〲 User Banned : ${JSON.parse(fs.readFileSync('./database/banned.json')).length}
+ *│*〲 User Blocked : ${JSON.parse(fs.readFileSync('./database/userblocked.json')).length} 
+ *│*〲 Cmd Blocked : ${JSON.parse(fs.readFileSync('./database/blockcmd.json')).length}
+ *│*
  *╰────────────❒*  
 
  *]─────❒ COMMAND ❒─────[*
@@ -408,17 +411,17 @@ ${week}, ${calender}
 
 *╭─❒ ⌜ THANKS TO ⌟*
 *│*
-*│* • Fachri
-*│* • Dittaz
-*│* • ZeilBotz
-*│* • AlyaaXyz?
-*│* • Zeeone Ofc
-*│* • Yudha Perdana
-*│* • Yogi PW
-*│* • Decode Denpa
-*│* • Fernazer
-*│* • X - Dev Team
-*│* • XChillDs & Yuzu
+*│* ➤ Fachri
+*│* ➤ Dittaz
+*│* ➤ ZeilBotz
+*│* ➤ AlyaaXyz?
+*│* ➤ Zeeone Ofc
+*│* ➤ Yudha Perdana
+*│* ➤ Yogi PW
+*│* ➤ Decode Denpa
+*│* ➤ Fernazer
+*│* ➤ X - Dev Team
+*│* ➤ XChillDs & Yuzu
 *│*
 *╰────────────❒*`
 }
