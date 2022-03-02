@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.pinimg.com/736x/d5/93/d9/d593d9b5d4908a2c89b5a8a71eefbe4c.jpg" alt="YOGI" width="170" />
+<img src="https://raw.githubusercontent.com/Ipulpachri/finxyz/master/stik/fake2.jpeg" alt="YOGI" width="170" />
 
 ## FACHRI BOTZ
 ## WhatsApp Bot
@@ -45,8 +45,9 @@
 
 ---------
 
- [![Baileys](https://github.com/adiwajshing/Baileys.png?size=100)](https://github.com/adiwajshing/Baileys) | [![Hexagonz](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) | [![Facri](https://github.com/Ipulpachri.png?size=100)](https://github.com/Ipulpachri)
+ [![Baileys](https://github.com/adiwajshing/baileys.png?size=100)](https://github.com/adiwajshing/Baileys) | [![Hexagonz](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) | [![Facri](https://github.com/Ipulpachri.png?size=100)](https://github.com/Ipulpachri)
 --------
-[Baileys](https://github.com/adiwajshing/Baileys) | [Hexagonz](https://github.com/hexagonz) | [Fachri](https://github.com/Ipulpachri)
+[`Baileys`](https://github.com/adiwajshing/Baileys) | [`Hexagonz`](https://github.com/hexagonz) | [`Ipulpachri`](https://github.com/Ipulpachri)
+
  
-Penulis / Pencipta | Penulis Ulang | Penulis ulang
+Penulis / Pencipta | Moderator | Penulis ulang
