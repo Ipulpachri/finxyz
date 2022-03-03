@@ -45,4 +45,4 @@
 [`Baileys`](https://github.com/adiwajshing/Baileys) | [`Hexagonz`](https://github.com/hexagonz) | [`Ipulpachri`](https://github.com/Ipulpachri)
 
  
-Penulis / Pencipta | Moderator | Penulis ulang
+ Pencipta | Moderator | Penulis ulang
