@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/Ipulpachri/finxyz/master/stik/fake2.jpeg" alt="YOGI" width="170" />
+<img src="https://raw.githubusercontent.com/Ipulpachri/finxyz/master/stik/fake2.jpeg" alt="Fachri Botz" width="170" />
 
 ## FACHRI BOTZ
 ## WhatsApp Bot
