@@ -2,7 +2,7 @@ exports.ahah = (prefix, pushname) => {
 return`
 𝗡𝗦𝗙𝗪 𝗠𝗘𝗡𝗨
 
- *╭─❒ ⌜ NSFW ⌟*
+ *╭─❒ ⌜ MENU NSFW ⌟*
  *│▸*
  *│▸* ${prefix}neko
  *│▸* ${prefix}waifu
@@ -28,7 +28,7 @@ return`
  *╰────────────❒*
 					
 					
- *╭─❒ ⌜ SFW ⌟*
+ *╭─❒ ⌜ MENU SFW ⌟*
  *│▸*
  *│▸* ${prefix}shinobu
  *│▸* ${prefix}megumin
@@ -61,6 +61,23 @@ return`
  *│▸* ${prefix}kemonomimi
  *│▸* ${prefix}holo
  *│▸*
+ *╰────────────❒*
+
+
+ *╭─❒ ⌜ THANKS TO ⌟*
+ *│*
+ *│* ➤ Fachri
+ *│* ➤ Dittaz
+ *│* ➤ ZeilBotz
+ *│* ➤ AlyaaXyz?
+ *│* ➤ Zeeone Ofc
+ *│* ➤ Yudha Perdana
+ *│* ➤ Yogi PW
+ *│* ➤ Decode Denpa
+ *│* ➤ Fernazer
+ *│* ➤ X - Dev Team
+ *│* ➤ XChillDs & Yuzu
+ *│*
  *╰────────────❒*
  `}
  
