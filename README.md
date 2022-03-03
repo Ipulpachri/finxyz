@@ -40,7 +40,7 @@
 
 # Thanks To
 
- [![Baileys](https://github.com/adiwajshing/baileys.png?size=100)](https://github.com/adiwajshing/Baileys) | [![Hexagonz](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) | [![Fachri](https://github.com/Ipulpachri.png?size=100)](https://github.com/Ipulpachri)
+ [![Baileys](https://github.com/adiwajshing.png?size=100)](https://github.com/adiwajshing/Baileys) | [![Hexagonz](https://github.com/hexagonz.png?size=100)](https://github.com/hexagonz) | [![Fachri](https://github.com/Ipulpachri.png?size=100)](https://github.com/Ipulpachri)
 --------
 [`Baileys`](https://github.com/adiwajshing/Baileys) | [`Hexagonz`](https://github.com/hexagonz) | [`Ipulpachri`](https://github.com/Ipulpachri)
 
