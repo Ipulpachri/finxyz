@@ -12,7 +12,7 @@
 <a href="#"><img title="Jangan Lupa Follow" src="https://img.shields.io/static/v1?label=FREE&message=SELF_BOT&color=red"></a>
 </p>
 
-### Fachri Botz stat
+### Ipulpachri stat
 ![Ra Github stat](https://github-readme-stats.vercel.app/api?username=Ipulpachri&theme=midnight-purple&show_icons=true) 
 
 ![Ra Github troppy](https://github-profile-trophy.vercel.app/?username=Ipulpachri&theme=monokai)
